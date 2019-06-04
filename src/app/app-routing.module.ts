@@ -4,11 +4,11 @@ import { HomeComponent } from './home/home.component';
 import { CharacterListComponent } from './character-list/character-list.component';
 import { CharacterProfileComponent } from './character-profile/character-profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CharacterDatabaseComponent } from './character-database/character-database.component';
 
 const routes: Routes = [
-  {path:"", redirectTo:"home", pathMatch:"full"},
-  {path:"home", component: HomeComponent, pathMatch:"full"},
-  {path:"characters", component: CharacterListComponent},
+  {path:"", component:HomeComponent, pathMatch:"full"},
+  {path:"character-database", component: CharacterDatabaseComponent, pathMatch:"full"},
   {path:"profile", component: CharacterProfileComponent},
   {path:"**", component: PageNotFoundComponent},
 ];

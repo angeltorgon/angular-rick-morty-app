@@ -8,6 +8,7 @@ import { CharacterListComponent } from './character-list/character-list.componen
 import { CharacterCardComponent } from './character-card/character-card.component';
 import { CharacterProfileComponent } from './character-profile/character-profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CharacterDatabaseComponent } from './character-database/character-database.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     CharacterListComponent,
     CharacterCardComponent,
     CharacterProfileComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    CharacterDatabaseComponent
   ],
   imports: [
     BrowserModule,
