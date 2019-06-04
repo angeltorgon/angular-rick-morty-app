@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-character-database',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CharacterDatabaseComponent implements OnInit {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
 
   ngOnInit() {
+    this.http.get('https://rickandmortyapi.com/api/character/')
+    .subscribe((res) => {
+      console.log(res)
+    })
   }
 
 }

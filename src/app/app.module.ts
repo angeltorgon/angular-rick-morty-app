@@ -9,6 +9,7 @@ import { CharacterCardComponent } from './character-card/character-card.componen
 import { CharacterProfileComponent } from './character-profile/character-profile.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CharacterDatabaseComponent } from './character-database/character-database.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { CharacterDatabaseComponent } from './character-database/character-datab
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
