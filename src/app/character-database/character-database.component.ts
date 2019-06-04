@@ -8,12 +8,14 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CharacterDatabaseComponent implements OnInit {
 
+  characters: any = [];
+
   constructor(private http: HttpClient) { }
 
   ngOnInit() {
     this.http.get('https://rickandmortyapi.com/api/character/')
-    .subscribe((res) => {
-      console.log(res)
+    .subscribe((res: any) => {
+      this.characters = res.results;
     })
   }
 
