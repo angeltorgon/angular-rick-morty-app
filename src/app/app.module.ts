@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { CharacterListComponent } from './character-list/character-list.component';
 import { CharacterCardComponent } from './character-card/character-card.component';
 import { CharacterProfileComponent } from './character-profile/character-profile.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { CharacterProfileComponent } from './character-profile/character-profile
     HomeComponent,
     CharacterListComponent,
     CharacterCardComponent,
-    CharacterProfileComponent
+    CharacterProfileComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,
