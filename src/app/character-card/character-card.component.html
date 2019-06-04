@@ -1,4 +1,7 @@
-<div class="card blue-grey darken-1">
-  <span class="card-title white-text">{{character?.name}}</span>
-  <img ngSrc="character.image"/>
+<div class="card blue-grey darken-1 white-text">
+  <img class="card-image" src="{{character?.image}}"/>
+  <p class="card-title">{{character?.name}}</p>
+  <p>Species: {{character?.species}}</p>
+  <p>Origen: {{character?.origin.name}}</p>
+  <p>Status: {{character?.status}}</p>
 </div>
