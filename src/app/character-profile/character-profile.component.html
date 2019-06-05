@@ -1,6 +1,6 @@
-<div class="container" *ngIf="character">
+<div class="card container" *ngIf="character">
   <img src="{{character.image}}" alt="">
-  <p>{{character.name}}</p>
-  <p>{{character.origin.name}}</p>
-  <p>{{character.status}}</p>
+  <p>Name: {{character.name}}</p>
+  <p>Origin: {{character.origin.name}}</p>
+  <p>Status: {{character.status}}</p>
 </div>
