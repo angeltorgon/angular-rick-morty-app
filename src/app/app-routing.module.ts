@@ -10,11 +10,8 @@ const routes: Routes = [
   {path:"", component:HomeComponent, pathMatch:"full"},
   {path:"character-database", component: CharacterDatabaseComponent, pathMatch:"full"},
   {
-    path:"profile", 
+    path:"profile/:id", 
     component: CharacterProfileComponent,
-    children: [
-      {path: "**", component: CharacterProfileComponent}
-    ],
   },
   {path:"**", component: PageNotFoundComponent, pathMatch:"full"},
 ];

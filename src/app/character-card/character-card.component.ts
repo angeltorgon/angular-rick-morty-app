@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'character-card',
@@ -12,7 +13,6 @@ export class CharacterCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.character)
   }
 
 }
