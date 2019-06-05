@@ -8,5 +8,16 @@
 }
 
 .container img {
-    width: 400px;
+    width: 500px;
+    max-width: 500px;
+}
+
+@media(max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .container img {
+        width: 100%;
+    }
 }
