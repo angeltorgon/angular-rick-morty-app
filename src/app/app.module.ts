@@ -11,6 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CharacterDatabaseComponent } from './character-database/character-database.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,7 +20,7 @@ import { HttpClientModule } from '@angular/common/http';
     CharacterCardComponent,
     CharacterProfileComponent,
     PageNotFoundComponent,
-    CharacterDatabaseComponent
+    CharacterDatabaseComponent,
   ],
   imports: [
     BrowserModule,
