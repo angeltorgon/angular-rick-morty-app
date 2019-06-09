@@ -5,3 +5,7 @@
 .left {
     font-size: 24px;
 }
+
+nav div a {
+    font-family: 'Permanent Marker', cursive;
+}
