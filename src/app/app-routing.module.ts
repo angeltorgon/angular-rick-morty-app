@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { CharacterListComponent } from './character-list/character-list.component';
-import { CharacterProfileComponent } from './character-profile/character-profile.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CharacterDatabaseComponent } from './character-database/character-database.component';
+import { HomeComponent } from './components/home/home.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+import { CharacterProfileComponent } from './components/character-profile/character-profile.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CharacterDatabaseComponent } from './components/character-database/character-database.component';
 
 const routes: Routes = [
   {path:"", component:HomeComponent, pathMatch:"full"},

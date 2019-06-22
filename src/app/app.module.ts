@@ -3,12 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { CharacterListComponent } from './character-list/character-list.component';
-import { CharacterCardComponent } from './character-card/character-card.component';
-import { CharacterProfileComponent } from './character-profile/character-profile.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { CharacterDatabaseComponent } from './character-database/character-database.component';
+import { HomeComponent } from './components/home/home.component';
+import { CharacterListComponent } from './components/character-list/character-list.component';
+import { CharacterCardComponent } from './components/character-card/character-card.component';
+import { CharacterProfileComponent } from './components/character-profile/character-profile.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { CharacterDatabaseComponent } from './components/character-database/character-database.component';
 import { HttpClientModule } from '@angular/common/http';
 
 
