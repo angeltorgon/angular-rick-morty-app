@@ -9,14 +9,30 @@ import { HttpClient } from '@angular/common/http';
 export class CharacterDatabaseComponent implements OnInit {
 
   characters: any = [];
+  currentPage: number = 1
 
   constructor(private http: HttpClient) { }
 
-  ngOnInit() {
-    this.http.get('https://rickandmortyapi.com/api/character/')
+  fetchCharacters() {
+    this.http.get(`https://rickandmortyapi.com/api/character/?page=${this.currentPage}`)
     .subscribe((res: any) => {
       this.characters = res.results;
     })
+  }
+
+  nextPage() {
+    this.currentPage += 1;
+    this.fetchCharacters();
+  }
+  
+  prevPage() {
+    this.currentPage -= 1;
+    this.fetchCharacters();
+
+  }
+
+  ngOnInit() {
+    this.fetchCharacters();
   }
 
 }
